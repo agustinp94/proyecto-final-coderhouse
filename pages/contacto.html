@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Librería Vértigo</title>
 </head>
 
 <body>
     <header>
         <div class="header">
-            <img src="images/vert-flores.jpeg" alt="Plano de la película Vértigo" id="logoimg">
+            <img src="/images/vert-flores.jpeg" alt="Plano de la película Vértigo" id="logoimg">
             <p class="topSearch"><input type="search" name="buscador" id="buscador" placeholder="Buscar..."></p>
             <h1 class="logo">Librería <p id="vertigo">Vértigo</p> </h1>
         </div>
        
         <nav>
             <ul class="nav">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="/index.html">Inicio</a></li>
                 <li><a href="libros.html">Libros</a></li>
                 <li><a href="peliculas.html">Películas</a></li>
                 <li><a href="locales.html">Locales</a></li>
@@ -27,14 +27,21 @@
         </nav>
 
     </header>
-    <main class="main">
+    <main class="mainContacto"> 
+        
         <div class="categorias">
-            <h1>Encontranos en:</h1>
-            <h2>San Francisco</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100938.77412850548!2d-122.50352666363897!3d37.758702824409696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sar!4v1645799353132!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <h2>Bodega Bay</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100165.67727023349!2d-123.10228995034788!3d38.321722224237426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8084274dbab23c5d%3A0xe4ea395a17784908!2sBodega%20Bay%2C%20CA%2094923%2C%20USA!5e0!3m2!1sen!2sar!4v1645799515836!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <h1>Contactanos:</h1>
         </div>
+        
+
+        <form action="" class="form">
+            <p><input type="text" name="nombre" placeholder="Nombre"></p>
+            <p><input type="email" name="emial" id="email" placeholder="Email"></p>
+            <p><textarea name="" id="" cols="30" rows="10" placeholder="Consulta"></textarea></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+
+        
 
         <div class="volveralinicio">
             <a href="#logoimg">Volver al inicio</a>
