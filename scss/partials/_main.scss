@@ -17,13 +17,12 @@
     max-width: 1500px;
     padding: 40px 0;
     &__header {
-        margin-top: 50px;
-        display: block;
+        margin-top: map-get($h1, margin-top);
+        display: map-get($h1, display);
+        color: map-get($h1, color);
     }
     &__carousel {
-        display: flex;
-        overflow: hidden;
-        flex-direction: row;
+        @extend %carousel;
     }
     &__carousel img {
         transition: all 0.3s ease-in;
@@ -49,9 +48,13 @@
 .categorias {
     max-width: 1500px;
     margin: 0 auto;
-    h2 {
+    h1 {
+        margin-top: map-get($h1, margin-top);
+        display: map-get($h1, display);
+        color: map-get($h1, color);
+    }
+    h2 { 
         color: $color-principal;
-        border-bottom: $color-principal;
         margin: 30px 0px;
     }
 }
