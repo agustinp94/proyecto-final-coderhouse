@@ -1,29 +1,45 @@
 .main {
     background-image: url(/images/vert-scot.png);
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.mainLocales {
+    background-image: url(/images/vert-scot.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 75%;
 }
 
 .mainContacto {
     background-image: url(/images/vert-forest.jpeg);
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 75%;
+    
+    min-height: 680px;
+    h1 {
+        margin-bottom: 85px;
+    }
 }
 
 .novedades {
-    margin: 0 auto;
+    margin: 0 auto; 
     max-width: 1500px;
     padding: 40px 0;
+    background-color: black;
+    
     &__header {
         margin-top: map-get($h1, margin-top);
         display: map-get($h1, display);
         color: map-get($h1, color);
+        padding-left: 50px;
     }
     &__carousel {
         @extend %carousel;
     }
+
     &__carousel img {
         transition: all 0.3s ease-in;
         margin: 10px 10px;
@@ -48,10 +64,12 @@
 .categorias {
     max-width: 1500px;
     margin: 0 auto;
+    
     h1 {
         margin-top: map-get($h1, margin-top);
         display: map-get($h1, display);
         color: map-get($h1, color);
+        padding-left: 50px;
     }
     h2 { 
         color: $color-principal;
@@ -60,11 +78,26 @@
 }
 
 .form {
-    margin: 80px auto;
-    max-width: 1200px;
-    min-height: 500px;
-    p {
-        margin: 10px 0px;
+    max-width: 600px;
+    margin-left: 85px;
+    background-color: black;  
+    
+    h1 {
+        margin-top: map-get($h1, margin-top);
+        display: map-get($h1, display);
+        color: map-get($h1, color);
+        }
+    h2 { 
+        color: $color-principal;
+        margin: 30px 0px;
+    }
+}
+
+.gridBackground {
+    background-color: black;
+    padding: 0 50px; 
+    &__h2 {
+        margin: 30px 0 0 0;
     }
 }
 
@@ -73,6 +106,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 300px;
     grid-gap: 10px;
+    border: 1px solid $color-secundario;
     img {
         margin: 10px 0px;
         width: 100%;
@@ -91,6 +125,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 455px;
     grid-gap: 10px;
+    border: 1px solid $color-secundario;
     img {
         width: 100%;
         height: 100%;
@@ -123,18 +158,22 @@
     position: sticky;
     left: 100%;
     bottom: 1vh;
-    border: 3px solid black;
-    width: 220px;
-    background-color: antiquewhite;
+    border: 3px solid $color-secundario;
+    width: 100px;
+    background-color: black; 
     border-radius: 5px;
     margin: 20px 15px;
     a {
-        color: $color-secundario;
+        text-decoration: none;
+        color: $color-principal;
         font-size: 30px;
         padding: 10px;
     }
     &:hover {
         background-color: grey;
+        a{
+            color: black;
+        }
     }
 }
 
@@ -147,4 +186,20 @@ textarea:focus {
 input::placeholder,
 textarea::placeholder {
     color: black;
+}
+
+.locales {
+    max-width: 600px;
+    margin-left: 85px;
+    background-color: black;
+    
+    h1 {
+        margin-top: map-get($h1, margin-top);
+        display: map-get($h1, display);
+        color: map-get($h1, color);
+    }
+    h2 { 
+        color: $color-principal;
+        margin: 30px 0px;
+    }
 }

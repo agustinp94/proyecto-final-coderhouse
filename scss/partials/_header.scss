@@ -1,77 +1,50 @@
+.navbar-brand {
+    color: $color-secundario !important;
+}
+
+#logoimg {
+    height: 20rem;
+}
+
 .header {
     width: 100%;
-    height: 467px;
+    height: 20rem;
     background-color: black;
-}
-
-.logo {
-    color: $color-principal;
-    position: absolute;
-    left: 800px;
-    top: 40px;
-    font-size: 150px;
-    animation-name: animacionLogo;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    animation-iteration-count: initial;
-    
-    @keyframes animacionLogo {
-        0% {
-            color: $color-principal;
-            font-size: 150px;
-        }
-    
-        50% {
-            color: $color-secundario;
-            font-size: 170px;
-        }
-    
-        100% {
-            color: $color-principal;
-            font-size: 150px;
-            
-        }
-    }
-}
-
-#vertigo {
-    color: $color-secundario;
-}
-
-
-
-.nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: nowrap;
-    list-style: none;
-    padding: 15px 15px;
-    background-color: black;
-    li {
-        padding: 8px;
-        width: 244px;
-        display: inline;
-        font-size: 30px;
-        border: 1px solid black;
-        background-color: antiquewhite;
-        border-radius: 5px;
-    }
-    li:hover {
-        color: #E14816;
-        background-color: grey;
-    }
-    a {
-        text-decoration: none;
-        color: #E14816;
-        margin: 50px;
+    .logo {
+        color: $color-principal;
+        position: relative;
+        left: 5rem;
+        top: 30px;  
+        font-size: 110px;
+        font-weight: bold;
+        animation-name: animacionLogo;
+        animation-duration: 2.5s;
+        animation-timing-function: ease;
+        animation-iteration-count: initial;
+        
+        @keyframes animacionLogo {
+            0% {
+                color: $color-principal;
+                font-size: 110px;
+            }
+        
+            50% {
+                color: $color-secundario;
+                font-size: 120px;
+            }
+        
+            100% {
+                color: $color-principal;
+                font-size: 110px;
+                
+            }
+        }
+        #vertigo {
+            color: $color-secundario;
+        }
     }
 }
 
-.topSearch {
-    margin: 5px 0px;
-    position: absolute;
-    right: 30px;
-    top: 5px;
-}
+
+

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <title>Librería Vértigo - Libros, películas y más!</title>
     <meta name="keywords" content="librería, vértigo, libros"> 
@@ -11,50 +12,73 @@
 
 <body>
     <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand">VÉRTIGO</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./libros.html">Libros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./peliculas.html">Películas</a>
+                  </li>               
+                  <li class="nav-item">
+                    <a class="nav-link" href="./locales.html">Locales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+
         <div class="header">
             <img src="/images/vert-flores.jpeg" alt="Plano de la película Vértigo" id="logoimg">
-            <p class="topSearch"><input type="search" name="buscador" id="buscador" placeholder="Buscar..."></p>
-            <h1 class="logo">Librería <p id="vertigo">Vértigo</p> </h1>
+            <h1 class="logo"><p id="libreria"> Librería </p> <p id="vertigo">Vértigo</p> </h1>
         </div>
-       
-        <nav>
-            <ul class="nav">
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="libros.html">Libros</a></li>
-                <li><a href="peliculas.html">Películas</a></li>
-                <li><a href="locales.html">Locales</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
 
     </header>
     <main class="main">
         <div class="categorias">
             <h1>CATEGORÍAS</h1>
-            <h2>CLÁSICOS</h2>
-            <div class="containergrid2">
-                <div class="antigona"><img loading="lazy"src="/images/libros-clasicos/antigona.jpg" alt="Libros Clásicos"></div>
-                <div class="dialogos"><img loading="lazy"src="/images/libros-clasicos/dialogos.jpeg" alt="Libros Clásicos"></div>
-                <div class="eneida"><img loading="lazy"src="/images/libros-clasicos/eneida.jpg" alt="Libros Clásicos"></div>
-                <div class="iliada"><img loading="lazy"src="/images/libros-clasicos/iliada.jpg" alt="Libros Clásicos"></div>
-                <div class="odisea"><img loading="lazy"src="/images/libros-clasicos/odisea.jpg" alt="Libros Clásicos"></div>
-                <div class="seneca"><img loading="lazy"src="/images/libros-clasicos/seneca.jpg" alt="Libros Clásicos"></div>
+            <div class="gridBackground">
+                <h2 class="gridBackground__h2">CLÁSICOS</h2>
+                <div class="containergrid2">
+                    <div class="antigona"><img loading="lazy"src="/images/libros-clasicos/antigona.jpg" alt="Libros Clásicos"></div>
+                    <div class="dialogos"><img loading="lazy"src="/images/libros-clasicos/dialogos.jpeg" alt="Libros Clásicos"></div>
+                    <div class="eneida"><img loading="lazy"src="/images/libros-clasicos/eneida.jpg" alt="Libros Clásicos"></div>
+                    <div class="iliada"><img loading="lazy"src="/images/libros-clasicos/iliada.jpg" alt="Libros Clásicos"></div>
+                    <div class="odisea"><img loading="lazy"src="/images/libros-clasicos/odisea.jpg" alt="Libros Clásicos"></div>
+                    <div class="seneca"><img loading="lazy"src="/images/libros-clasicos/seneca.jpg" alt="Libros Clásicos"></div>
+                </div>
+                
+                <h2 class="gridBackground__h2">IDIOMAS</h2>
+                <div class="containergrid2">
+                    <div class="aleman"><img loading="lazy"src="/images/libros-idiomas/aleman.jpg" alt="Libros Idiomas"></div>
+                    <div class="japones"><img loading="lazy"src="/images/libros-idiomas/japones.jpg" alt="Libros Idiomas"></div>
+                    <div class="chino"><img loading="lazy"src="/images/libros-idiomas/chino.jpg" alt="Libros Idiomas"></div>
+                    <div class="frances"><img loading="lazy"src="/images/libros-idiomas/frances.jpg" alt="Libros Idiomas"></div>
+                    <div class="ingles"><img loading="lazy"src="/images/libros-idiomas/ingles.jpg" alt="Libros Idiomas"></div>
+                    <div class="italiano"><img loading="lazy"src="/images/libros-idiomas/italiano.jpg" alt="Libros Idiomas"></div>
+                </div>
             </div>
-            
-            <h2>IDIOMAS</h2>
-            <div class="containergrid2">
-                <div class="aleman"><img loading="lazy"src="/images/libros-idiomas/aleman.jpg" alt="Libros Idiomas"></div>
-                <div class="japones"><img loading="lazy"src="/images/libros-idiomas/japones.jpg" alt="Libros Idiomas"></div>
-                <div class="chino"><img loading="lazy"src="/images/libros-idiomas/chino.jpg" alt="Libros Idiomas"></div>
-                <div class="frances"><img loading="lazy"src="/images/libros-idiomas/frances.jpg" alt="Libros Idiomas"></div>
-                <div class="ingles"><img loading="lazy"src="/images/libros-idiomas/ingles.jpg" alt="Libros Idiomas"></div>
-                <div class="italiano"><img loading="lazy"src="/images/libros-idiomas/italiano.jpg" alt="Libros Idiomas"></div>
-            </div>
-
         </div>
 
         <div class="volveralinicio">
-            <a href="#logoimg">Volver al inicio</a>
+            <a href="#navbar">Inicio</a>
         </div>
 
     </main>
@@ -65,5 +89,7 @@
           <p>Desarrollo integral del sitio: <a href="https://en.wikipedia.org/wiki/Alfred_Hitchcock" class="red">Alfred Hitchcock</a></p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

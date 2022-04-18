@@ -1,6 +1,25 @@
-@media screen and (max-width:768px) {
-    .nav {
-        flex-direction: column;
-        align-items: flex-start;
+@media screen and (max-width:992px) {
+    #vertigo, #libreria {
+        font-size: 0px;
     }
 }
+
+@media screen and (max-width:576px) {
+    #logoimg {
+        width: 412px;
+    }
+    .novedades__carousel {
+        flex-direction: column;
+    }
+
+    .containergrid2, .containergrid {
+        grid-auto-rows: 10rem;
+    }
+    .volveralinicio {
+        width: 0px;
+        height: 0px;
+        margin: 0px;
+        border: 0px;
+    }
+}
+

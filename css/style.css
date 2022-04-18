@@ -1,20 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.header {
-  width: 100%;
-  height: 467px;
-  background-color: black;
+.navbar-brand {
+  color: #E14816 !important;
 }
 
-.logo {
+#logoimg {
+  height: 20rem;
+}
+
+.header {
+  width: 100%;
+  height: 20rem;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .logo {
   color: #1C991E;
-  position: absolute;
-  left: 800px;
-  top: 40px;
-  font-size: 150px;
+  position: relative;
+  left: 5rem;
+  top: 30px;
+  font-size: 110px;
+  font-weight: bold;
   -webkit-animation-name: animacionLogo;
           animation-name: animacionLogo;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-animation-iteration-count: initial;
@@ -24,110 +36,75 @@
 @-webkit-keyframes animacionLogo {
   0% {
     color: #1C991E;
-    font-size: 150px;
+    font-size: 110px;
   }
   50% {
     color: #E14816;
-    font-size: 170px;
+    font-size: 120px;
   }
   100% {
     color: #1C991E;
-    font-size: 150px;
+    font-size: 110px;
   }
 }
 
 @keyframes animacionLogo {
   0% {
     color: #1C991E;
-    font-size: 150px;
+    font-size: 110px;
   }
   50% {
     color: #E14816;
-    font-size: 170px;
+    font-size: 120px;
   }
   100% {
     color: #1C991E;
-    font-size: 150px;
+    font-size: 110px;
   }
 }
 
-#vertigo {
+.header .logo #vertigo {
   color: #E14816;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  list-style: none;
-  padding: 15px 15px;
-  background-color: black;
-}
-
-.nav li {
-  padding: 8px;
-  width: 244px;
-  display: inline;
-  font-size: 30px;
-  border: 1px solid black;
-  background-color: antiquewhite;
-  border-radius: 5px;
-}
-
-.nav li:hover {
-  color: #E14816;
-  background-color: grey;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #E14816;
-  margin: 50px;
-}
-
-.topSearch {
-  margin: 5px 0px;
-  position: absolute;
-  right: 30px;
-  top: 5px;
 }
 
 .main {
   background-image: url(/images/vert-scot.png);
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
+.mainLocales {
+  background-image: url(/images/vert-scot.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 75%;
+}
+
 .mainContacto {
   background-image: url(/images/vert-forest.jpeg);
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 75%;
+  min-height: 680px;
+}
+
+.mainContacto h1 {
+  margin-bottom: 85px;
 }
 
 .novedades {
   margin: 0 auto;
   max-width: 1500px;
   padding: 40px 0;
+  background-color: black;
 }
 
 .novedades__header {
   margin-top: 50px;
   display: block;
   color: #1C991E;
+  padding-left: 50px;
 }
 
 .novedades__carousel img {
@@ -173,6 +150,7 @@
   margin-top: 50px;
   display: block;
   color: #1C991E;
+  padding-left: 50px;
 }
 
 .categorias h2 {
@@ -181,22 +159,39 @@
 }
 
 .form {
-  margin: 80px auto;
-  max-width: 1200px;
-  min-height: 500px;
+  max-width: 600px;
+  margin-left: 85px;
+  background-color: black;
 }
 
-.form p {
-  margin: 10px 0px;
+.form h1 {
+  margin-top: 50px;
+  display: block;
+  color: #1C991E;
+}
+
+.form h2 {
+  color: #1C991E;
+  margin: 30px 0px;
+}
+
+.gridBackground {
+  background-color: black;
+  padding: 0 50px;
+}
+
+.gridBackground__h2 {
+  margin: 30px 0 0 0;
 }
 
 .containergrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (3, 1fr);
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 300px;
   grid-gap: 10px;
+  border: 1px solid #E14816;
 }
 
 .containergrid img {
@@ -219,10 +214,11 @@
 .containergrid2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (4, 1fr);
+  -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 455px;
   grid-gap: 10px;
+  border: 1px solid #E14816;
 }
 
 .containergrid2 img {
@@ -261,21 +257,26 @@
   position: sticky;
   left: 100%;
   bottom: 1vh;
-  border: 3px solid black;
-  width: 220px;
-  background-color: antiquewhite;
+  border: 3px solid #E14816;
+  width: 100px;
+  background-color: black;
   border-radius: 5px;
   margin: 20px 15px;
 }
 
 .volveralinicio a {
-  color: #E14816;
+  text-decoration: none;
+  color: #1C991E;
   font-size: 30px;
   padding: 10px;
 }
 
 .volveralinicio:hover {
   background-color: grey;
+}
+
+.volveralinicio:hover a {
+  color: black;
 }
 
 input:focus,
@@ -304,6 +305,23 @@ textarea::placeholder {
   color: black;
 }
 
+.locales {
+  max-width: 600px;
+  margin-left: 85px;
+  background-color: black;
+}
+
+.locales h1 {
+  margin-top: 50px;
+  display: block;
+  color: #1C991E;
+}
+
+.locales h2 {
+  color: #1C991E;
+  margin: 30px 0px;
+}
+
 .footer {
   width: 100%;
   height: 120px;
@@ -330,18 +348,8 @@ textarea::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-@media screen and (max-width: 768px) {
-  .nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 * {
@@ -356,5 +364,32 @@ textarea::placeholder {
 body {
   font-family: 'Roboto', sans-serif;
   background-color: black;
+}
+
+@media screen and (max-width: 992px) {
+  #vertigo, #libreria {
+    font-size: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #logoimg {
+    width: 412px;
+  }
+  .novedades__carousel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containergrid2, .containergrid {
+    grid-auto-rows: 10rem;
+  }
+  .volveralinicio {
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    border: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

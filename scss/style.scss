@@ -4,7 +4,7 @@
 @import "./partials/main";
 @import "./partials/footer";
 @import "./partials/extend";
-@import "./partials/mediaQueries";
+
 
 * {
     margin: 0;
@@ -18,3 +18,5 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: black;
 }
+
+@import "./partials/mediaQueries";
