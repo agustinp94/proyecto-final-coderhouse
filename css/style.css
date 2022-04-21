@@ -160,6 +160,7 @@
 
 .form {
   max-width: 600px;
+  min-height: 680px;
   margin-left: 85px;
   background-color: black;
 }
@@ -390,6 +391,24 @@ body {
     height: 0px;
     margin: 0px;
     border: 0px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #logoimg {
+    width: 360px;
+  }
+  .locales {
+    margin-left: 5px;
+  }
+  iframe {
+    width: 300px;
+  }
+  .form {
+    margin-left: 5px;
+  }
+  .novedades__carousel img {
+    width: 330px;
   }
 }
 /*# sourceMappingURL=style.css.map */

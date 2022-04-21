@@ -23,3 +23,25 @@
     }
 }
 
+@media screen and (max-width:360px) {
+    #logoimg {
+        width: 360px;
+    }
+
+    .locales {
+        margin-left: 5px;
+    }
+    iframe {
+        width: 300px;
+    }
+
+    .form{
+        margin-left: 5px;
+    }
+    .novedades__carousel {
+        img {
+        width: 330px;
+        }
+    }
+
+}
