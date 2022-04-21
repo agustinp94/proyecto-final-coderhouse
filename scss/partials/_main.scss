@@ -10,7 +10,7 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: 75%;
-}
+} 
 
 .mainContacto {
     background-image: url(/images/vert-forest.jpeg);
@@ -26,14 +26,14 @@
 .novedades {
     margin: 0 auto; 
     max-width: 1500px;
-    padding: 40px 0;
+    padding: 2em 0;
     background-color: black;
     
     &__header {
         margin-top: map-get($h1, margin-top);
         display: map-get($h1, display);
         color: map-get($h1, color);
-        padding-left: 50px;
+        padding-left: 3rem;
     }
     &__carousel {
         @extend %carousel;
@@ -41,7 +41,7 @@
 
     &__carousel img {
         transition: all 0.3s ease-in;
-        margin: 10px 10px;
+        margin: 1rem 1rem;
         width: 380px;
         height: 450px;
     }
@@ -68,18 +68,18 @@
         margin-top: map-get($h1, margin-top);
         display: map-get($h1, display);
         color: map-get($h1, color);
-        padding-left: 50px;
+        padding-left: 3rem;
     }
     h2 { 
         color: $color-principal;
-        margin: 30px 0px;
+        margin: 1.5rem 0px;
     }
 }
 
 .form {
     max-width: 600px;
     min-height: 680px;
-    margin-left: 85px;
+    margin-left: 4rem;
     background-color: black;  
     
     h1 {
@@ -89,23 +89,23 @@
         }
     h2 { 
         color: $color-principal;
-        margin: 30px 0px;
+        margin: 1.5rem 0px;
     }
 }
 
 .gridBackground {
     background-color: black;
-    padding: 0 50px; 
+    padding: 0 3rem; 
     &__h2 {
-        margin: 30px 0 0 0;
+        margin: 2rem 0 0 0;
     }
 }
 
 .containergrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
-    grid-gap: 10px;
+    grid-auto-rows: 20rem;
+    grid-gap: 0.5rem;
     border: 1px solid $color-secundario;
     img {
         margin: 10px 0px;
@@ -123,8 +123,8 @@
 .containergrid2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 455px;
-    grid-gap: 10px;
+    grid-auto-rows: 30rem;
+    grid-gap: 0.5rem;
     border: 1px solid $color-secundario;
     img {
         width: 100%;
@@ -157,18 +157,18 @@
 .volveralinicio {
     position: sticky;
     left: 100%;
-    bottom: 1vh;
+    bottom: 1rem;
     border: 3px solid $color-secundario;
-    width: 100px;
+    width: 6rem;
     background-color: black; 
     border-radius: 5px;
-    margin: 20px 15px;
+    margin: 1em 1em;
     
     a {
         text-decoration: none;
         color: $color-principal;
         font-size: 30px;
-        padding: 10px;
+        padding: 0.5rem;
     }
     &:hover {
         background-color: grey;
@@ -189,10 +189,13 @@ textarea::placeholder {
     color: black;
 }
 
+
+
 .locales {
     max-width: 600px;
-    margin-left: 85px;
+    margin-left: 4.5rem;
     background-color: black;
+    
     
     h1 {
         margin-top: map-get($h1, margin-top);
@@ -201,6 +204,6 @@ textarea::placeholder {
     }
     h2 { 
         color: $color-principal;
-        margin: 30px 0px;
+        margin: 1.5rem 0px;
     }
 }

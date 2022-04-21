@@ -11,33 +11,31 @@
     height: 20rem;
     background-color: black;
     display: flex;
+    
     .logo {
         color: $color-principal;
         position: relative;
         left: 5rem;
-        top: 30px;  
-        font-size: 110px;
+        top: 1.5rem;  
+        font-size: 5.5em;
         font-weight: bold;
         animation-name: animacionLogo;
-        animation-duration: 2.5s;
+        animation-duration: 3s;
         animation-timing-function: ease;
         animation-iteration-count: initial;
-        
+
         @keyframes animacionLogo {
             0% {
                 color: $color-principal;
-                font-size: 110px;
+                font-size: 5.5em;
             }
-        
             50% {
                 color: $color-secundario;
-                font-size: 120px;
+                font-size: 6em;
             }
-        
             100% {
                 color: $color-principal;
-                font-size: 110px;
-                
+                font-size: 5.5em;    
             }
         }
         #vertigo {
