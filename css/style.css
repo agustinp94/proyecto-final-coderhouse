@@ -188,7 +188,7 @@
 .containergrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (3, 1fr);
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 20rem;
   grid-gap: 0.5rem;
@@ -215,7 +215,7 @@
 .containergrid2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (4,1 1fr);
+  -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 30rem;
   grid-gap: 0.5rem;
